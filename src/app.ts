@@ -3,7 +3,6 @@ import cors from "cors";
 import path from "path";
 import bodyParser from "body-parser";
 import { routes } from "./routes/route";
-const port = process.env.PORT || 9000;
 const app = express();
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -20,9 +19,9 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.listen(9000, async () => {
+app.listen(80, async () => {
 
-  console.log(`Listening on port ${9000}`);
+  console.log(`Listening on port ${80}`);
 });
 process.on('uncaughtException', function (err) {
   console.log("Error", err)
