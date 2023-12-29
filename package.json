@@ -7,6 +7,7 @@
     "start": "node src/app.ts",
     "lint": "eslint ."
   },
+  "type": "module",
   "author": "Manish Gandotra",
   "license": "ISC",
   "dependencies": {
