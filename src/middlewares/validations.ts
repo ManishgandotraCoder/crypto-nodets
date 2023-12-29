@@ -8,7 +8,7 @@ import { msg } from "../helpers/messages"
  */
 
 export class validations  {
-
+// Check values are passed 
   async currencyValidation(req:Request, res:Response, next :NextFunction) {
     
     let ruleObj = {
